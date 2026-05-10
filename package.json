@@ -10,12 +10,12 @@
     "test:q2": "npx playwright test tests/q2.spec.js",
     "test:q3": "npx playwright test tests/q3.spec.js",
     "report:generate": "npx allure generate allure-results --clean",
-    "report:open": "npx allure open allure-results",
+    "report:open": "npx allure open allure-report",
     "report": "npm run report:generate && npm run report:open",
     "clean": "rm -rf allure-results test-results"
   },
   "keywords": ["playwright", "automation", "saucedemo", "allure"],
-  "author": "Your Name",
+  "author": "Jasif",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
