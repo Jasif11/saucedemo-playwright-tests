@@ -1,0 +1,26 @@
+{
+  "name": "saucedemo-playwright",
+  "version": "1.0.0",
+  "description": "Playwright automation tests for SauceDemo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:all": "npx playwright test",
+    "test:q1": "npx playwright test tests/q1.spec.js",
+    "test:q2": "npx playwright test tests/q2.spec.js",
+    "test:q3": "npx playwright test tests/q3.spec.js",
+    "report:generate": "npx allure generate allure-results --clean",
+    "report:open": "npx allure open allure-results",
+    "report": "npm run report:generate && npm run report:open",
+    "clean": "rm -rf allure-results test-results"
+  },
+  "keywords": ["playwright", "automation", "saucedemo", "allure"],
+  "author": "Your Name",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "allure-commandline": "^2.40.0",
+    "allure-playwright": "^3.7.2"
+  }
+}
