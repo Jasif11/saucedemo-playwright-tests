@@ -8,9 +8,9 @@ module.exports = defineConfig({
   retries: 0,
   workers: 1, // Ensures sequential execution
   reporter: [
-    ['line'],
-    ['allure-playwright'] // Add allure report
-  ],
+  ['line'],
+  ['allure-playwright']   
+],
   use: {
     baseURL: 'https://www.saucedemo.com',
     trace: 'on-first-retry',
